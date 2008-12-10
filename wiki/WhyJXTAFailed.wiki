@@ -1,0 +1,26 @@
+= Personal Opinions on Why JXTA Failed =
+
+I know JXTA a log time a long and took a close at it recently because I wanted to use it to prototype for a data pushing/streaming framework. Apparently, JXTA does not satisfy my need and it seems dead when look at its project website and its community. This bring up the question why JXTA failed.
+
+After thinking of it for some time, I have some personal opinions on its failure.
+
+== Wrong Target ==
+
+If you look at JXTA protocol stack, you will see from service down to communication layers. It seems include everything but cannot actually address any of them. First, it is hardly a peep to peer communication building block, because it does not address the peer group automated management or lack of protocols to form practical peer to peer groups. For example, we may need hierarchical peer groups with leader nodes, routing protocols, UPD protocols.
+
+On the contrary, JXTA looks more like a service oriented framework, but we have already had web services, ESB, and other SOA techniques. Seems there is no real requirement for peer to peer based SOA unless the future will be cloud computing. But the understand protocol in JXTA does not really handle the dynamic of the group very well and it leads to question of whether it is really suitable for dynamic SOA architecture.
+
+As a result, JXTA can hardly find its place in applications until tomorrow will be a different world. That is to say, JXTA is in an embarrassing situation now to find the right target.
+
+== Too Much Flavor for J2EE ==
+
+Seems JXTA is designed by people with heavy J2EE experience instead of networking background. 
+
+First, XML is used for all protocol messages even between inner layers. XML might make sense for communication command/handshake only at the actual layers that will talk to other nodes in the network, but not for all layers and all messages. 
+
+ 
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
