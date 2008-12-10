@@ -18,7 +18,7 @@ Seems JXTA is designed by people with heavy J2EE experience instead of networkin
 
 First, XML is used for all protocol messages even between inner layers. XML might make sense for communication command/handshake only at the layers that will talk to other nodes in the network, but not for all layers and all messages. XML is really verbose for actual communication such as data transmission.
 
-Second, why on the earth JXTA needs the service layer? In my opinion, it would be more appropriate to only focus on the peer to peer communication part and do not care about what data or application it needs to service. One of the most important design principles is separation of concerns. Unfortunately, JXTA tries to address everything, but some times "all" means "none".
+Second, why on the earth JXTA needs the service layer? In my opinion, it would be more appropriate to only focus on the peer to peer communication part and do not care about what data or application it needs to serve. One of the most important design principles is separation of concerns. Unfortunately, JXTA tries to address everything, but some times "all" means "none".
 
 == Lack of protocols for peer group management ==
 
