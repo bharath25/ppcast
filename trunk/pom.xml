@@ -106,6 +106,7 @@
     <modules>
         <module>ppgroup</module>
         <module>ppcast</module>
+        <module>reference-projects/tellurium-server</module>
     </modules>
     <build>
         <pluginManagement>
